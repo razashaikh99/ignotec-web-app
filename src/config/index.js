@@ -1,4 +1,4 @@
-import { heroSlide1, heroSlide2, heroSlide3 } from "../assets/images";
+import { featureCard1, featureCard2, featureCard3, featureCard4, heroSlide1, heroSlide2, heroSlide3 } from "../assets/images";
 
 export const navItems = [
     {
@@ -54,5 +54,44 @@ export const heroSlides = [
         buttonText: "Explore More",
         buttonPath: "/about",
         image: heroSlide3,
+    },
+];
+
+export const featuredInsights = [
+    {
+        id: 1,
+        type: "NEWSROOM",
+        title: "Transforming businesses through next-generation digital solutions",
+        description:
+            "Discover how our technology solutions help organizations accelerate transformation, improve performance, and create meaningful digital experiences.",
+        image: featureCard1,
+        path: "/insights/digital-transformation",
+    },
+    {
+        id: 2,
+        type: "NEWSROOM",
+        title: "Building intelligent solutions for modern enterprises",
+        description:
+            "Empowering organizations with scalable technology and intelligent platforms designed to solve complex business challenges.",
+        image: featureCard2,
+        path: "/insights/intelligent-solutions",
+    },
+    {
+        id: 3,
+        type: "INSIGHTS",
+        title: "Leveraging generative AI and data analytics for sustainable growth",
+        description:
+            "Explore how artificial intelligence and advanced analytics can unlock new opportunities and drive smarter business decisions.",
+        image: featureCard3,
+        path: "/insights/generative-ai",
+    },
+    {
+        id: 4,
+        type: "CASE STUDY",
+        title: "Transforming IT service management for a global enterprise",
+        description:
+            "See how modern digital platforms can streamline operations, improve efficiency, and deliver better customer experiences.",
+        image: featureCard4,
+        path: "/case-study/it-transformation",
     },
 ];
