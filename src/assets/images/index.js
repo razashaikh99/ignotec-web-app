@@ -9,3 +9,7 @@ export { default as featureCard4 } from './feature_card_4.jpg';
 export { default as featureCard5 } from './feature_card_5.webp';
 export { default as featureCard6 } from './feature_card_6.webp';
 export { default as featureCard7 } from './feature_card_7.webp';
+export { default as service_card_1 } from './service_card_1.png';
+export { default as service_card_2 } from './service_card_2.png';
+export { default as service_card_3 } from './service_card_3.png';
+export { default as service_card_4 } from './service_card_4.jpg';

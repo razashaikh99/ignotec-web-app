@@ -1,4 +1,4 @@
-import { featureCard1, featureCard2, featureCard3, featureCard4, heroSlide1, heroSlide2, heroSlide3 } from "../assets/images";
+import { featureCard1, featureCard2, featureCard3, featureCard4, heroSlide1, heroSlide2, heroSlide3, service_card_1, service_card_2, service_card_3, service_card_4 } from "../assets/images";
 
 export const navItems = [
     {
@@ -95,3 +95,86 @@ export const featuredInsights = [
         path: "/case-study/it-transformation",
     },
 ];
+
+export const statisticsContent = {
+    title: "From digital change to AI-powered advantage",
+    description:
+        "We help enterprises reimagine how they work, serve, and grow with AI-led transformation that turns complexity into clarity and ambition into measurable progress.",
+
+    stats: [
+        {
+            id: 1,
+            value: "8500+",
+            label: "Changemakers driving revolution",
+        },
+        {
+            id: 2,
+            value: "16+",
+            label: "Countries with our presence and clientele",
+        },
+        {
+            id: 3,
+            value: "300+",
+            label: "Active clients across the globe",
+        },
+        {
+            id: 4,
+            value: "25+",
+            label: "Years of industry experience",
+        },
+        {
+            id: 5,
+            value: "1000+",
+            label: "Successful projects delivered worldwide",
+        },
+    ],
+};
+
+export const servicesContent = {
+    title: "Our services",
+    buttonText: "DISCOVER OUR FULL CAPABILITIES",
+    buttonPath: "/services",
+
+    cards: [
+        {
+            id: 1,
+            title: "AI Transformation",
+            description:
+                "Drive measurable business value with scalable AI capabilities across GenAI, Predictive AI, ML, and automation.",
+            image: service_card_1,
+            path: "/services/ai-transformation",
+        },
+        {
+            id: 2,
+            title: "Cloud Solutions",
+            description:
+                "From cloud migration to optimisation, we create secure, scalable environments that improve agility and reduce complexity.",
+            image: service_card_2,
+            path: "/services/cloud-solutions",
+        },
+        {
+            id: 3,
+            title: "Digital Strategy",
+            description:
+                "We bring strategy, design, and technology into one connected approach to modernise systems and customer journeys.",
+            image: service_card_3,
+            path: "/services/digital-strategy",
+        },
+        {
+            id: 4,
+            title: "Data & Analytics",
+            description:
+                "Organise, analyse, and activate your data to uncover insights faster and make better business decisions.",
+            image: service_card_4,
+            path: "/services/data-analytics",
+        },
+        {
+            id: 5,
+            title: "Cyber Security",
+            description:
+                "Protect your enterprise infrastructure with advanced threat monitoring and multi-layer security protocols.",
+            image: service_card_2,
+            path: "/services/cyber-security",
+        },
+    ],
+};
