@@ -40,11 +40,11 @@ const StatisticsSection = () => {
                     }}
                     breakpoints={{
                         640: {
-                            slidesPerView: 2,
+                            slidesPerView: 0.5,
                             spaceBetween: 32,
                         },
                         1024: {
-                            slidesPerView: 3,
+                            slidesPerView: 0.5,
                             spaceBetween: 48,
                         },
                     }}

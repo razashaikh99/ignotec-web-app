@@ -8,6 +8,7 @@ const Home = () => {
             <HeroSection />
             <FeaturedInsights />
             <StatisticsSection />
+            
         </div>
     )
 }
