@@ -1,4 +1,31 @@
-import { featureCard1, featureCard2, featureCard3, featureCard4, heroSlide1, heroSlide2, heroSlide3, service_card_1, service_card_2, service_card_3, service_card_4 } from "../assets/images";
+import { careerBg, featureCard1, featureCard2, featureCard3, featureCard4, featureCard5, featureCard6, featureCard7, heroSlide1, heroSlide2, heroSlide3, service_card_1, service_card_2, service_card_3, service_card_4 } from "../assets/images";
+import { microsoft, temenos, sap, ibm, salesforce, oracle, redhat, servicenow, aws } from "../assets/images";
+
+export const partnersContent = {
+    title: "Built on strong technology alliances",
+    description: "We partner with the world’s leading technology providers to deliver high-impact services that help enterprises transform, scale, and create lasting business value.",
+    buttonText: "VIEW ALL PARTNERS",
+    buttonPath: "/startup-enablement/partners",
+    partners: [
+        { id: "microsoft", name: "Microsoft", image: microsoft },
+        { id: "temenos", name: "Temenos", image: temenos },
+        { id: "sap", name: "SAP", image: sap },
+        { id: "ibm", name: "IBM", image: ibm },
+        { id: "salesforce", name: "Salesforce", image: salesforce },
+        { id: "oracle", name: "Oracle", image: oracle },
+        { id: "redhat", name: "Red Hat", image: redhat },
+        { id: "servicenow", name: "ServiceNow", image: servicenow },
+        { id: "aws", name: "AWS", image: aws },
+    ],
+};
+
+export const careersContent = {
+    title: "Where careers take shape",
+    description: "Build meaningful work with a team that values growth, collaboration, and real impact.",
+    buttonText: "EXPLORE CAREERS",
+    buttonPath: "/careers",
+    image: careerBg,
+};
 
 export const navItems = [
     {
@@ -93,6 +120,42 @@ export const featuredInsights = [
             "See how modern digital platforms can streamline operations, improve efficiency, and deliver better customer experiences.",
         image: featureCard4,
         path: "/case-study/it-transformation",
+    },
+    {
+        id: 5,
+        type: "INSIGHTS",
+        title: "Building scalable cloud platforms for growing businesses",
+        description:
+            "Explore how flexible cloud architecture helps teams launch faster, manage costs, and adapt to changing business needs.",
+        image: featureCard5,
+        path: "/insights/scalable-cloud-platforms",
+    },
+    {
+        id: 6,
+        type: "NEWSROOM",
+        title: "Connecting strategy and design to create better digital products",
+        description:
+            "Discover how collaboration between designers and developers brings useful, intuitive digital experiences to life.",
+        image: featureCard6,
+        path: "/insights/digital-product-design",
+    },
+    {
+        id: 7,
+        type: "CASE STUDY",
+        title: "Modernizing an online store for a seamless customer journey",
+        description:
+            "Follow a sample retail transformation that connects product discovery, checkout, and order management in one experience.",
+        image: featureCard7,
+        path: "/case-study/e-commerce-modernization",
+    },
+    {
+        id: 8,
+        type: "INSIGHTS",
+        title: "Turning business data into actionable insights with analytics",
+        description:
+            "Learn how clear dashboards and connected data can help teams track performance and make informed decisions.",
+        image: featureCard3,
+        path: "/insights/business-data-analytics",
     },
 ];
 

@@ -5,22 +5,24 @@ const FeatureCard = ({ item }) => {
     return (
         <Link
             to={item.path}
-            className="group relative block h-162 overflow-hidden rounded-xl bg-[#171717]"
+            className="group relative block h-120 overflow-hidden rounded-xl bg-[#171717] sm:h-132 xl:aspect-7/12 xl:h-auto"
         >
             {/* Default Content */}
             <div className="absolute inset-0 transition-opacity duration-500 group-hover:opacity-20">
 
                 {/* Image */}
-                <div className="h-103 overflow-hidden">
+                <div className="h-[64%] overflow-hidden">
                     <img
                         src={item.image}
                         alt={item.title}
+                        loading="lazy"
+                        decoding="async"
                         className="size-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                 </div>
 
                 {/* Content */}
-                <div className="p-7">
+                <div className="p-6">
                     <p className="text-xs font-medium tracking-[0.18em] text-white/60">
                         {item.type}
                     </p>
@@ -36,7 +38,7 @@ const FeatureCard = ({ item }) => {
             <div className="absolute inset-0 translate-y-full bg-linear-to-b from-[#dd796e] via-[#d55a91] to-[#bd3aa4] transition-transform duration-500 ease-out group-hover:translate-y-0" />
 
             {/* Hover Content */}
-            <div className="absolute inset-0 z-10 flex translate-y-8 flex-col justify-between p-7 opacity-0 transition-all delay-100 duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+            <div className="absolute inset-0 z-10 flex translate-y-8 flex-col justify-between p-6 opacity-0 transition-all delay-100 duration-500 group-hover:translate-y-0 group-hover:opacity-100">
 
                 <div>
                     <p className="text-xs font-semibold tracking-[0.18em] text-white/80">

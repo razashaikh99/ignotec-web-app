@@ -8,12 +8,12 @@ const StatisticsSection = () => {
     const { title, description, stats } = statisticsContent;
 
     return (
-        <section className="w-full bg-white py-20 md:py-28 lg:py-32">
+        <section className="w-full bg-white py-16 md:py-20 lg:py-24">
 
             <div className="mx-auto max-w-360 px-6 lg:px-14">
 
                 {/* Heading */}
-                <div className="mb-14 max-w-190 md:mb-16">
+                <div className="mb-14 max-w-240 md:mb-16">
 
                     <h2 className="max-w-145 text-3xl leading-tight font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl">
                         {title}
@@ -32,23 +32,23 @@ const StatisticsSection = () => {
                     spaceBetween={24}
                     slidesPerGroup={1}
                     loop={true}
-                    speed={800}
+                    speed={1000}
                     autoplay={{
-                        delay: 2500,
+                        delay: 3000,
                         disableOnInteraction: false,
                         pauseOnMouseEnter: true,
                     }}
                     breakpoints={{
                         640: {
-                            slidesPerView: 0.5,
+                            slidesPerView: 2,
                             spaceBetween: 32,
                         },
                         1024: {
-                            slidesPerView: 0.5,
+                            slidesPerView: 3,
                             spaceBetween: 48,
                         },
                     }}
-                    className="w-full"
+                    className="w-full cursor-grab"
                 >
                     {stats.map((item) => (
                         <SwiperSlide

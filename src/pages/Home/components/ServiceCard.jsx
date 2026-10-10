@@ -1,34 +1,32 @@
-import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
+import Button from "../../../components/Button";
 
 const ServiceCard = ({ item }) => {
     return (
-        <article className="group relative flex h-95 min-w-0 flex-col overflow-hidden rounded-t-2xl bg-white transition-shadow duration-300 hover:shadow-xl">
+        <article className="group relative flex h-108 min-w-0 flex-col overflow-hidden rounded-t-2xl bg-white transition-shadow duration-300 hover:shadow-xl">
 
             {/* Card Content */}
-            <div className="relative z-10 p-6 lg:p-7">
+            <div className="relative z-10 shrink-0 px-6 pt-8 pb-3 lg:px-7 2xl:px-8">
 
-                <h3 className="text-2xl leading-tight font-semibold tracking-tight text-black">
+                <h3 className="text-2xl leading-tight font-semibold tracking-tight text-black 2xl:text-3xl">
                     {item.title}
                 </h3>
 
-                <p className="mt-3 text-sm leading-relaxed text-black lg:text-base">
+                <p className="mt-3 text-sm leading-snug text-black lg:text-base">
                     {item.description}
                 </p>
 
-                <Link
+                <Button
                     to={item.path}
-                    className="mt-3 inline-flex items-center gap-1 text-xs font-medium text-black transition-colors duration-300 hover:text-purple-700"
+                    variant="text" iconClassName="size-3.5" className="mt-3"
                 >
                     LEARN MORE
 
-                    <ArrowRight className="size-3.5 transition-transform duration-300 group-hover:translate-x-1" />
-                </Link>
+                </Button>
 
             </div>
 
             {/* Bottom Abstract Image */}
-            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-42 overflow-hidden">
+            <div className="pointer-events-none min-h-0 flex-1 overflow-hidden">
 
                 <img
                     src={item.image}

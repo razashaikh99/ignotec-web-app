@@ -1,17 +1,18 @@
-import { Link } from "react-router-dom";
+import Button from "../../../components/Button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 import { heroSlides } from "../../../config";
 
 const HeroSection = () => {
     return (
-        <section className="relative h-screen min-h-175 w-full overflow-hidden">
+        <section className="relative h-[85svh] min-h-160 w-full overflow-hidden sm:h-screen sm:min-h-175">
 
             <Swiper
-                modules={[Navigation, Autoplay]}
+                modules={[Navigation, Autoplay, Pagination]}
                 slidesPerView={1}
                 loop
                 speed={900}
@@ -23,7 +24,8 @@ const HeroSection = () => {
                     prevEl: ".hero-prev",
                     nextEl: ".hero-next",
                 }}
-                className="h-full w-full"
+                pagination={{ el: ".hero-pagination", clickable: true }}
+                className="hero-carousel h-full w-full"
             >
                 {heroSlides.map((item) => (
                     <SwiperSlide key={item.id}>
@@ -41,7 +43,7 @@ const HeroSection = () => {
                             <div className="absolute inset-0 bg-linear-to-r from-black/70 via-black/30 to-transparent" />
 
                             {/* Content */}
-                            <div className="relative mx-auto flex h-full max-w-360 items-center px-6 pt-22 lg:px-14">
+                            <div className="relative mx-auto flex h-full max-w-360 items-center px-6 pt-22 pb-24 lg:px-14 lg:pb-0">
 
                                 <div className="max-w-180">
 
@@ -49,18 +51,17 @@ const HeroSection = () => {
                                         {item.title}
                                     </h1>
 
-                                    <p className="mt-7 max-w-170 text-base leading-8 text-white/90 sm:text-lg lg:text-xl">
+                                    <p className="mt-7 max-w-170 text-base leading-6 md:leading-8 text-white/90 sm:text-lg lg:text-xl">
                                         {item.description}
                                     </p>
 
-                                    <Link
+                                    <Button
                                         to={item.buttonPath}
-                                        className="mt-10 inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 text-sm font-medium text-black transition-transform duration-300 hover:scale-105"
+                                        className="mt-10"
                                     >
                                         {item.buttonText}
 
-                                        <span>→</span>
-                                    </Link>
+                                    </Button>
 
                                 </div>
 
@@ -69,13 +70,14 @@ const HeroSection = () => {
 
                     </SwiperSlide>
                 ))}
+                <div slot="container-end" className="hero-pagination" />
             </Swiper>
 
             {/* Previous */}
             <button
                 type="button"
                 aria-label="Previous slide"
-                className="hero-prev absolute top-1/2 left-5 z-20 flex size-11 -translate-y-1/2 cursor-pointer items-center justify-center text-white transition-transform hover:scale-110 lg:left-6"
+                className="hero-prev absolute top-1/2 left-6 z-20 hidden size-11 -translate-y-1/2 cursor-pointer items-center justify-center text-white transition-transform hover:scale-110 lg:flex"
             >
                 <ChevronLeft
                     className="size-9"
@@ -87,7 +89,7 @@ const HeroSection = () => {
             <button
                 type="button"
                 aria-label="Next slide"
-                className="hero-next absolute top-1/2 right-5 z-20 flex size-11 -translate-y-1/2 cursor-pointer items-center justify-center text-white transition-transform hover:scale-110 lg:right-6"
+                className="hero-next absolute top-1/2 right-6 z-20 hidden size-11 -translate-y-1/2 cursor-pointer items-center justify-center text-white transition-transform hover:scale-110 lg:flex"
             >
                 <ChevronRight
                     className="size-9"

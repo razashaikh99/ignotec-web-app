@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-@import "tailwindcss";
-
 @theme {
     --font-poppins: "Poppins", sans-serif;
 }
@@ -42,4 +38,66 @@ body {
 
 #root {
   margin: 0 auto;
+}
+
+.hero-carousel {
+  --swiper-pagination-color: #fff;
+  --swiper-pagination-bullet-inactive-color: #fff;
+  --swiper-pagination-bullet-inactive-opacity: 0.45;
+  --swiper-pagination-bullet-size: 10px;
+  --swiper-pagination-bullet-horizontal-gap: 6px;
+  --swiper-pagination-bottom: 32px;
+}
+
+.hero-carousel .hero-pagination {
+  position: absolute;
+  bottom: 32px;
+  left: 0;
+  z-index: 20;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-carousel .hero-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin: 0 6px;
+  border-radius: 999px;
+  background: #fff;
+  opacity: 0.45;
+  cursor: pointer;
+  transition: width 250ms ease, opacity 250ms ease;
+}
+
+.hero-carousel .hero-pagination .swiper-pagination-bullet-active {
+  width: 26px;
+  opacity: 1;
+}
+
+.hero-carousel .swiper-pagination-bullet:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}
+
+.services-dropdown {
+  animation: services-dropdown-open 280ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes services-dropdown-open {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .services-dropdown {
+    animation: none;
+  }
 }
