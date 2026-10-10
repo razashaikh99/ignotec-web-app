@@ -42,7 +42,7 @@ const SocialIcon = ({ name }) => {
 };
 
 const FooterLinks = ({ links, service = false }) => (
-    <ul className="space-y-4 text-sm leading-6">
+    <ul className="space-y-2 text-sm leading-6 sm:space-y-4">
         {links.map(([label, path], index) => <li key={label} className={service && index === links.length - 1 ? "pt-3" : ""}><Link to={path} className={`transition-colors hover:text-purple-700 focus-visible:underline ${service && index === 0 ? "font-medium" : ""}`}>{label}</Link></li>)}
     </ul>
 );
@@ -69,12 +69,12 @@ const Footer = () => {
     return (
         <footer className="bg-[#ededed] text-black">
             <div className="mx-auto max-w-480 px-6 pt-14 pb-10 lg:px-11 lg:pt-16">
-                <div className="grid gap-x-10 gap-y-10 sm:grid-cols-2 xl:grid-cols-5">
+                <div className="grid gap-x-10 gap-y-6 sm:grid-cols-2 sm:gap-y-10 xl:grid-cols-5">
                     <div className="sm:col-span-2">
-                        <h2 className="mb-6 text-xl font-normal">Services</h2>
-                        <div className="grid gap-8 sm:grid-cols-2 xl:gap-10">{services.map((links, index) => <FooterLinks key={index} links={links} service />)}</div>
+                        <h2 className="mb-3 text-xl font-normal sm:mb-6">Services</h2>
+                        <div className="grid gap-5 sm:grid-cols-2 sm:gap-8 xl:gap-10">{services.map((links, index) => <FooterLinks key={index} links={links} service />)}</div>
                     </div>
-                    {columns.map(({ title, links }) => <div key={title}><h2 className="mb-6 text-xl font-normal">{title}</h2><FooterLinks links={links} /></div>)}
+                    {columns.map(({ title, links }) => <div key={title}><h2 className="mb-3 text-xl font-normal sm:mb-6">{title}</h2><FooterLinks links={links} /></div>)}
                 </div>
                 <div className="mt-14 flex flex-col justify-between gap-8 lg:mt-20 lg:flex-row lg:items-end">
                     <div className="w-full max-w-120">
