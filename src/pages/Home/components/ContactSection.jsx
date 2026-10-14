@@ -69,7 +69,7 @@ const ContactSection = () => {
         <section className="relative isolate overflow-hidden bg-black py-16 lg:py-20">
             <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_right_bottom,#c111a9_0%,#521b55_25%,transparent_65%)]" />
             <div className="mx-auto grid max-w-360 items-center gap-12 px-6 lg:grid-cols-2 lg:gap-24 lg:px-14">
-                <h2 className="max-w-140 text-4xl leading-tight font-normal tracking-tight text-white sm:text-5xl">Let's <span className="bg-linear-to-r from-purple-400 to-fuchsia-400 bg-clip-text text-transparent">build what's</span><br /> next, together.</h2>
+                <h2 className="max-w-140 text-3xl leading-tight font-normal tracking-tight text-white sm:text-4xl">Let's <span className="bg-linear-to-r from-purple-400 to-fuchsia-400 bg-clip-text text-transparent">build what's</span><br /> next, together.</h2>
                 <form ref={formRef} onSubmit={submit} noValidate className="w-full rounded-3xl bg-white p-6 shadow-2xl sm:p-9">
                     <div className="space-y-5">
                         <div className="grid gap-4 sm:grid-cols-2">

@@ -7,7 +7,7 @@ const ServiceCard = ({ item }) => {
             {/* Card Content */}
             <div className="relative z-10 shrink-0 px-6 pt-8 pb-3 lg:px-7 2xl:px-8">
 
-                <h3 className="text-2xl leading-tight font-semibold tracking-tight text-black 2xl:text-3xl">
+                <h3 className="text-xl leading-tight font-semibold tracking-tight text-black 2xl:text-2xl">
                     {item.title}
                 </h3>
 

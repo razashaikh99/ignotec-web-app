@@ -15,7 +15,7 @@ const StatisticsSection = () => {
                 {/* Heading */}
                 <div className="mb-14 max-w-240 md:mb-16">
 
-                    <h2 className="max-w-145 text-3xl leading-tight font-semibold tracking-tight text-black sm:text-4xl lg:text-5xl">
+                    <h2 className="max-w-145 text-2xl leading-tight font-semibold tracking-tight text-black sm:text-3xl lg:text-4xl">
                         {title}
                     </h2>
 

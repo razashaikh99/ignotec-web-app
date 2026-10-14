@@ -6,7 +6,7 @@ const FeaturedInsights = () => {
         <section className="bg-white py-20 lg:py-28">
             <div className="mx-auto max-w-360 px-6 lg:px-14">
 
-                <h2 className="mb-10 text-4xl font-semibold tracking-tight text-black sm:text-5xl">
+                <h2 className="mb-10 text-3xl font-semibold tracking-tight text-black sm:text-4xl">
                     Featured insights
                 </h2>
 

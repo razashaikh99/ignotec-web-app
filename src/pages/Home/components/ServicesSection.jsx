@@ -13,10 +13,10 @@ const ServicesSection = () => {
         <section className="overflow-hidden bg-linear-to-b from-white via-[#e4d4e8] to-white py-16 lg:py-24">
             <div className="mx-auto max-w-360 px-6 lg:px-14">
                 <div className="mb-10 flex flex-col items-start justify-between gap-5 sm:flex-row sm:items-center lg:mb-16">
-                    <h2 className="text-3xl font-semibold tracking-tight text-black lg:text-4xl">{title}</h2>
+                    <h2 className="text-2xl font-semibold tracking-tight text-black lg:text-3xl">{title}</h2>
                     <Button variant="text" onClick={() => swiperRef.current?.slideNext()}
                         aria-label="Show next services" aria-controls="services-carousel"
-                        iconClassName="size-4" className="py-3 text-left sm:text-sm">
+                        iconClassName="size-4" className="text-left">
                         {buttonText}
                     </Button>
                 </div>

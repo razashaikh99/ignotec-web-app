@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap");
+
 @import "tailwindcss";
 
 @theme {
-    --font-poppins: "Poppins", sans-serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
 }
 
 @theme {
@@ -33,7 +35,8 @@
 
 body {
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-sans);
+  font-optical-sizing: auto;
 }
 
 #root {
@@ -90,6 +93,7 @@ body {
     opacity: 0;
     transform: translateY(-12px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);

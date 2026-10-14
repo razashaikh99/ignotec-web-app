@@ -27,7 +27,7 @@ const FeatureCard = ({ item }) => {
                         {item.type}
                     </p>
 
-                    <h3 className="mt-4 text-lg leading-7 font-semibold text-white">
+                    <h3 className="mt-4 text-base leading-7 font-semibold text-white">
                         {item.title}
                     </h3>
                 </div>
@@ -45,7 +45,7 @@ const FeatureCard = ({ item }) => {
                         {item.type}
                     </p>
 
-                    <h3 className="mt-5 text-xl leading-8 font-semibold text-white">
+                    <h3 className="mt-5 text-lg leading-8 font-semibold text-white">
                         {item.title}
                     </h3>
 

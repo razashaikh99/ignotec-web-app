@@ -47,7 +47,7 @@ const HeroSection = () => {
 
                                 <div className="max-w-180">
 
-                                    <h1 className="text-4xl leading-tight font-semibold text-white sm:text-5xl lg:text-6xl xl:text-7xl">
+                                    <h1 className="leading-tight font-semibold text-white text-3xl md:text-5xl">
                                         {item.title}
                                     </h1>
 

@@ -11,7 +11,7 @@ const StatisticCard = ({ item }) => {
             </h3>
 
             {/* Description */}
-            <p className="mt-5 max-w-100 text-xl leading-relaxed font-normal tracking-tight text-black md:text-2xl lg:text-2xl">
+            <p className="mt-5 max-w-100 text-xl leading-relaxed font-normal tracking-tight text-black">
                 {item.label}
             </p>
 
