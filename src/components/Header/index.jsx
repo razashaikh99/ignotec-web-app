@@ -58,7 +58,7 @@ const Header = () => {
 
                 {/* Logo */}
                 <Link to='/'>
-                    <img src={logo} alt='Ignotec' className='cursor-pointer w-35' />
+                    <img src={logo} alt='Ignotec' className='cursor-pointer w-30 md:w-35' />
                 </Link>
 
                 {/* Main Navigation */}
