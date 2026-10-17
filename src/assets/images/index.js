@@ -16,7 +16,7 @@ export { default as service_card_4 } from './service_card_4.jpg';
 export { default as microsoft } from './microsoft.png';
 export { default as temenos } from './temenos.png';
 export { default as sap } from './sap.png';
-export { default as ibm } from './ibm.png';
+export { default as ibm } from './ibm.jpg';
 export { default as salesforce } from './salesforce.png';
 export { default as oracle } from './oracle.png';
 export { default as redhat } from './redhat.png';
